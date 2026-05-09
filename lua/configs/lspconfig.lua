@@ -5,7 +5,6 @@ require("mason-lspconfig").setup({
   automatic_installation = true,
 })
 
--- server specific configs
 local configs = {
   jsonls = {
     filetypes = { "json", "jsonc" },
