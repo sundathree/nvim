@@ -9,5 +9,5 @@
 - **[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)** - syntax highlighting
 - **[nvim-autopairs](https://github.com/windwp/nvim-autopairs)** - auto closing brackets and quotes
 - **[neovim-ayu](https://github.com/Shatur/neovim-ayu)** - colorscheme
-- **[vim-lumen](https://github.com/vimpostor/vim-lumen)** - automatic light/dark mode switching [https://github.com/vimpostor/vim-lumen#dependencies]((dependencies))
+- **[vim-lumen](https://github.com/vimpostor/vim-lumen)** - automatic light/dark mode switching [(dependencies)](https://github.com/vimpostor/vim-lumen#dependencies)
 - **[lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)** - statusline
