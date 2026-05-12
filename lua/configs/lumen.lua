@@ -1,7 +1,7 @@
 vim.api.nvim_create_autocmd("User", {
   pattern = "LumenLight",
   callback = function()
-    require("ayu").setup({ mirage = true })
+    require("ayu").setup({ mirage = false })
     vim.cmd.colorscheme("ayu-light")
     require("lualine").setup({ options = { theme = "ayu_light" } })
   end,
@@ -10,9 +10,9 @@ vim.api.nvim_create_autocmd("User", {
 vim.api.nvim_create_autocmd("User", {
   pattern = "LumenDark",
   callback = function()
-    require("ayu").setup({ mirage = true })
-    vim.cmd.colorscheme("ayu-mirage")
-    require("lualine").setup({ options = { theme = "ayu_mirage" } })
+    require("ayu").setup({ mirage = false })
+    vim.cmd.colorscheme("ayu")
+    require("lualine").setup({ options = { theme = "ayu" } })
   end,
 })
 
