@@ -4,7 +4,7 @@ return {
     priority = 1000,
     config = function()
       require("ayu").setup({
-        mirage = false,
+        mirage = true,
       })
       vim.cmd.colorscheme("ayu")
     end,

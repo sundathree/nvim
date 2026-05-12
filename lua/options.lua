@@ -10,6 +10,7 @@ o.expandtab = true
 o.signcolumn = 'no'
 o.cursorlineopt = 'both'
 
+opt.cursorline = true
 opt.smartindent = true
 opt.wrap = false
 opt.swapfile = false
