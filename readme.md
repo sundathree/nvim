@@ -11,3 +11,4 @@
 - **[neovim-ayu](https://github.com/Shatur/neovim-ayu)** - colorscheme
 - **[vim-lumen](https://github.com/vimpostor/vim-lumen)** - automatic light/dark mode switching [(dependencies)](https://github.com/vimpostor/vim-lumen#dependencies)
 - **[lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)** - statusline
+- **[roslyn.nvim](https://github.com/seblyng/roslyn.nvim)** - c# lsp plugin

@@ -16,9 +16,9 @@ map("v", "<leader>/", "gc", { desc = "toggle comment", remap = true })
 
 
 map("n", "<C-n>", function()
-  if vim.bo.filetype == "netrw" then
-    vim.cmd("bd")
-  else
-    vim.cmd("Ex")
-  end
+	if vim.bo.filetype == "netrw" then
+		vim.cmd("bd")
+	else
+		vim.cmd("Ex")
+	end
 end, { desc = "toggle netrw" })

@@ -1,24 +1,31 @@
 local o = vim.o
 local opt = vim.opt
 
-o.numberwidth = 1
 o.number = true
-o.shiftwidth = 2
-o.tabstop = 2
-o.softtabstop = 2
-o.expandtab = true
-o.signcolumn = 'no'
-o.cursorlineopt = 'both'
-
-opt.cursorline = true
-opt.smartindent = true
-opt.wrap = false
-opt.swapfile = false
-opt.guicursor = ""
-opt.title = true
 opt.relativenumber = true
-opt.showmode = false
+
+o.tabstop = 8
+o.shiftwidth = 8
+o.softtabstop = 8
+
+o.signcolumn = 'no'
+
+o.cursorlineopt = 'both'
+opt.cursorline = true
+
+opt.autoindent = true
+opt.smartindent = true
+
+opt.wrap = true
+opt.linebreak = true
+opt.textwidth = 80
+
 opt.clipboard = "unnamedplus"
-opt.undofile = true
+opt.swapfile = false
 opt.undodir = vim.fn.stdpath("data") .. "/undo"
+opt.undofile = true
+
 opt.fillchars = { eob = " " }
+opt.guicursor = ""
+opt.showmode = false
+opt.title = true
