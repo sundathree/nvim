@@ -20,5 +20,12 @@ return {
     version = "*",
     opts = require("configs.blink")
   },
-  { "b0o/schemastore.nvim" }
+  { "b0o/schemastore.nvim" },
+  {
+    "seblyng/roslyn.nvim",
+    ---@module 'roslyn.config'
+    ---@type RoslynNvimConfig
+    opts = {
+    },
+  },
 }
