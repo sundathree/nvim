@@ -22,6 +22,15 @@ local configs = {
 			},
 		},
 	},
+	lua_ls = {
+		settings = {
+			Lua = {
+				diagnostics = {
+					globals = { "vim" },
+				},
+			},
+		},
+	},
 }
 
 for server, config in pairs(configs) do
@@ -31,3 +40,5 @@ end
 for _, server in ipairs(servers) do
 	vim.lsp.enable(server, "roslyn")
 end
+
+vim.diagnostic.config({ virtual_text = true })
