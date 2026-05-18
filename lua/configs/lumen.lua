@@ -3,7 +3,7 @@ vim.api.nvim_create_autocmd("User", {
 	callback = function()
 		require("ayu").setup({ mirage = false })
 		vim.cmd.colorscheme("ayu-light")
-		require("lualine").setup({ options = { theme = "ayu_light" } })
+		require("lualine").setup({ options = { theme = "auto" } })
 	end,
 })
 
@@ -12,7 +12,7 @@ vim.api.nvim_create_autocmd("User", {
 	callback = function()
 		require("ayu").setup({ mirage = false })
 		vim.cmd.colorscheme("ayu")
-		require("lualine").setup({ options = { theme = "ayu" } })
+		require("lualine").setup({ options = { theme = "auto" } })
 	end,
 })
 
