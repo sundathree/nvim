@@ -1,11 +1,13 @@
-vim.api.nvim_create_autocmd("FileType", {
+local a = vim.api
+
+a.nvim_create_autocmd("FileType", {
 	pattern = "netrw",
 	callback = function()
 		vim.keymap.set("n", "<Esc>", "<cmd>bd<CR>", { buffer = true })
 	end,
 })
 
-vim.api.nvim_create_autocmd("VimEnter", {
+a.nvim_create_autocmd("VimEnter", {
 	callback = function()
 		if vim.fn.argc() == 0 then
 			vim.cmd("Ex")

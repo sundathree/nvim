@@ -8,10 +8,6 @@ return {
 		["<Esc>"] = { function(cmp) cmp.hide() end, "fallback" },
 	},
 
-	appearance = {
-		nerd_font_variant = "normal",
-	},
-
 	sources = {
 		default = { "lsp", "path", "snippets", "buffer" },
 	},

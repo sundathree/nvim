@@ -14,6 +14,7 @@ map({"n", "v"}, "x", '"_x', { desc = "black hole delete" })
 map("n", "<leader>/", "gcc", { desc = "toggle comment", remap = true })
 map("v", "<leader>/", "gc", { desc = "toggle comment", remap = true })
 
+map("n", "<leader>th", "<cmd>Themify<CR>", { desc = "theme picker" })
 
 map("n", "<C-n>", function()
 	if vim.bo.filetype == "netrw" then
