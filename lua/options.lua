@@ -16,6 +16,7 @@ opt.cursorline = true
 opt.autoindent = true
 opt.smartindent = true
 
+o.autoread = true
 opt.clipboard = "unnamedplus"
 opt.swapfile = false
 opt.undodir = vim.fn.stdpath("data") .. "/undo"
@@ -25,6 +26,13 @@ opt.fillchars = { eob = " " }
 opt.showmode = false
 opt.title = true
 
+opt.termguicolors = true
+
 g.netrw_banner = false
 g.netrw_liststyle = 3
 g.netrw_winsize = 25
+
+g.accent_color = "cyan"
+
+g.mapleader = " "
+g.maplocalleader = "\\"

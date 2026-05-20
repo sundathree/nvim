@@ -1,5 +1,9 @@
 return {
+	"Alligator/accent.vim",
 	"Shatur/neovim-ayu",
+	"catppuccin",
+	"default",
 	"idr4n/github-monochrome.nvim",
-	"axvr/photon.vim"
+	"habamax",
+	"axvr/photon.vim",
 }

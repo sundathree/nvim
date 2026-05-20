@@ -9,9 +9,7 @@ return {
 		lualine_a = { "mode" },
 		lualine_b = {
 			"branch",
-			{
-				"diff",
-			},
+			"diff",
 			"diagnostics",
 		},
 		lualine_c = {
@@ -38,10 +36,6 @@ return {
 				},
 			},
 		},
-		lualine_c = {},
-		lualine_b = { "lsp_progress", },
-		lualine_x = {},
-		lualine_y = { "grapple" },
 		lualine_z = { "tabs" }
 	},
 }

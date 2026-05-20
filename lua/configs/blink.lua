@@ -21,5 +21,18 @@ return {
 			auto_show = true,
 			auto_show_delay_ms = 500
 		},
+
+		ghost_text = { enabled = true },
+
+		menu = {
+			draw = {
+				columns = { { "label", "label_description", gap = 1 }, { "kind" } },
+				components = {
+					kind_icon = { text = function() return "" end },
+				},
+			},
+		},
 	},
+
+	appearance = { nerd_font_variant = "none" },
 }

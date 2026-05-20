@@ -20,9 +20,9 @@ map('n', '<Tab>', ':bnext<CR>', { silent = true })
 map('n', '<S-Tab>', ':bprevious<CR>', { silent = true })
 
 map("n", ",,", function()
-  if vim.bo.filetype == "netrw" then
-    vim.cmd("bd")
-  else
-    vim.cmd("Ex")
-  end
+	if vim.bo.filetype == "netrw" then
+		vim.cmd("bd")
+	else
+		vim.cmd("Ex")
+	end
 end, { silent = true })
