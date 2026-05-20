@@ -1,5 +1,6 @@
 local o = vim.o
 local opt = vim.opt
+local g = vim.g
 
 o.number = true
 
@@ -21,6 +22,9 @@ opt.undodir = vim.fn.stdpath("data") .. "/undo"
 opt.undofile = true
 
 opt.fillchars = { eob = " " }
-opt.guicursor = ""
 opt.showmode = false
 opt.title = true
+
+g.netrw_banner = false
+g.netrw_liststyle = 3
+g.netrw_winsize = 25

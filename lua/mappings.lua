@@ -1,25 +1,28 @@
 local map = vim.keymap.set
 
-map("i", "<C-h>", "<Left>", { desc = "move left" })
-map("i", "<C-l>", "<Right>", { desc = "move right" })
-map("i", "<C-j>", "<Down>", { desc = "move down" })
-map("i", "<C-k>", "<Up>", { desc = "move up" })
+map("i", "<C-h>", "<Left>")
+map("i", "<C-l>", "<Right>")
+map("i", "<C-j>", "<Down>")
+map("i", "<C-k>", "<Up>")
 
-map("n", "<Esc>", "<cmd>noh<CR>", { desc = "clear highlights" })
-map("n", "<leader>w", "<cmd>w<CR>", { desc = ":w" })
-map("n", "<leader>x", "<cmd>x<CR>", { desc = ":wq but better" })
-map("n", "<leader>q", "<cmd>q<CR>", { desc = ":q" })
-map({"n", "v"}, "x", '"_x', { desc = "black hole delete" })
+map("n", "<Esc>", "<cmd>noh<CR>")
+map("n", "<C-s>", "<cmd>w<CR>")
+map("n", "<leader>x", "<cmd>bd<CR>")
+map("n", "<leader>q", "<cmd>q<CR>")
+map({"n", "v"}, "x", '"_x')
 
-map("n", "<leader>/", "gcc", { desc = "toggle comment", remap = true })
-map("v", "<leader>/", "gc", { desc = "toggle comment", remap = true })
+map("n", "<leader>/", "gcc")
+map("v", "<leader>/", "gc")
 
-map("n", "<leader>th", "<cmd>Themify<CR>", { desc = "theme picker" })
+map("n", "<leader>th", "<cmd>Themify<CR>")
 
-map("n", "<C-n>", function()
-	if vim.bo.filetype == "netrw" then
-		vim.cmd("bd")
-	else
-		vim.cmd("Ex")
-	end
-end, { desc = "toggle netrw" })
+map('n', '<Tab>', ':bnext<CR>', { silent = true })
+map('n', '<S-Tab>', ':bprevious<CR>', { silent = true })
+
+map("n", ",,", function()
+  if vim.bo.filetype == "netrw" then
+    vim.cmd("bd")
+  else
+    vim.cmd("Ex")
+  end
+end, { silent = true })

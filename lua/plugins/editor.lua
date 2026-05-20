@@ -7,6 +7,9 @@ return {
 			highlight = { enable = true },
 		},
 	},
-
-	{ "windwp/nvim-autopairs", event = "InsertEnter" },
+	{
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = true,
+	},
 }
