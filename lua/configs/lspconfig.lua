@@ -1,4 +1,13 @@
-local servers = { "html", "cssls", "jsonls", "pyright", "yamlls", "lua_ls", "ts_ls", "taplo" }
+local servers = {
+	"html",
+	"cssls",
+	"jsonls",
+	"pyright",
+	"yamlls",
+	"lua_ls",
+	"ts_ls",
+	"taplo"
+}
 
 require("mason").setup({
 	registries = {

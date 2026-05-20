@@ -13,7 +13,7 @@ return {
 	},
 	{
 		"saghen/blink.cmp",
-		branch = "v1",
+		version = '1.*',
 		opts = require("configs.blink")
 	},
 	{ "b0o/schemastore.nvim" },

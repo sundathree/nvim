@@ -5,7 +5,6 @@ return {
 		section_separators = '',
 		icons_enabled = false,
 	},
-
 	sections = {
 		lualine_a = {'mode'},
 		lualine_b = {'branch'},
