@@ -7,16 +7,8 @@ return {
 	},
 	sections = {
 		lualine_a = { "mode" },
-		lualine_b = {
-			"branch",
-			"diff",
-			"diagnostics",
-		},
-		lualine_c = {
-			{
-				"filename", path = 1, status = true,
-			},
-		},
+		lualine_b = { "branch" },
+		lualine_c = { { "filename", path = 1, status = true }, },
 		lualine_x = {
 			"encoding",
 			"fileformat",
@@ -26,16 +18,15 @@ return {
 		lualine_z = { "location" }
 	},
 	tabline = {
-		lualine_a = {
+		lualine_b = {
 			{
 				"buffers",
 				mode = 2,
 				use_mode_colors = true,
 				buffers_color = {
-					active = 'Identifier',
+					inactive = 'Background',
 				},
 			},
 		},
-		lualine_z = { "tabs" }
 	},
 }

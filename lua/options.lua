@@ -32,7 +32,8 @@ g.netrw_banner = false
 g.netrw_liststyle = 3
 g.netrw_winsize = 25
 
-g.accent_color = "cyan"
+g.accent_auto_cwd_colour = 1
+g.accent_darken = 1
 
 g.mapleader = " "
 g.maplocalleader = "\\"
