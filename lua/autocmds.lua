@@ -5,7 +5,7 @@ local function netrw_keys()
 	map("n", "<Esc>", "<cmd>bd<CR>", { buffer = true })
 end
 
-local function open_netrw_on_start()
+local function netrw_startup()
 	if vim.fn.argc() ~= 0 then return end
 	vim.cmd("Ex")
 	map("n", "<Esc>", function()
@@ -14,4 +14,4 @@ local function open_netrw_on_start()
 end
 
 a.nvim_create_autocmd("FileType", { pattern = "netrw", callback = netrw_keys })
-a.nvim_create_autocmd("VimEnter", { callback = open_netrw_on_start })
+a.nvim_create_autocmd("VimEnter", { callback = netrw_startup })

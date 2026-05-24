@@ -6,16 +6,10 @@ local servers = {
 	"yamlls",
 	"lua_ls",
 	"ts_ls",
-	"taplo"
+	"taplo",
 }
 
-require("mason").setup({
-	registries = {
-		"github:mason-org/mason-registry",
-		"github:Crashdummyy/mason-registry",
-	},
-})
-
+require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = servers,
 	automatic_installation = true,
@@ -43,11 +37,11 @@ local configs = {
 }
 
 for server, config in pairs(configs) do
-	vim.lsp.config(server, config, "roslyn")
+	vim.lsp.config(server, config)
 end
 
 for _, server in ipairs(servers) do
-	vim.lsp.enable(server, "roslyn")
+	vim.lsp.enable(server)
 end
 
 vim.diagnostic.config({ virtual_text = true })

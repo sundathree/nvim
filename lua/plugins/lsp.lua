@@ -17,5 +17,4 @@ return {
 		opts = require("configs.blink")
 	},
 	{ "b0o/schemastore.nvim" },
-	{ "seblyng/roslyn.nvim" },
 }
