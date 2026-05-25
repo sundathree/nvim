@@ -5,8 +5,8 @@ vim.keymap.set("n", "<leader>q", "<cmd>q<CR>")
 vim.keymap.set("n", "<leader>o", "<cmd>so<CR>")
 vim.keymap.set({"n", "v"}, "x", '"_x')
 
-vim.keymap.set('n', '<Tab>', ':bnext<CR>', { silent = true })
-vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>', { silent = true })
+vim.keymap.set("n", "<Tab>", "<cmd>bnext<CR>")
+vim.keymap.set("n", "<S-Tab>", "<cmd>bprevious<CR>")
 
 vim.keymap.set("n", ",,", function()
     if vim.bo.filetype == "netrw" then
@@ -14,4 +14,4 @@ vim.keymap.set("n", ",,", function()
     else
 	vim.cmd("Ex")
     end
-end, { silent = true })
+end)
