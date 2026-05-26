@@ -7,7 +7,6 @@ return {
 		italic = false,
 		bold = false
 	    })
-	    vim.cmd.colorscheme("vague")
 	end
     },
     {

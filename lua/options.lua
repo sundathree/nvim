@@ -1,11 +1,8 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.shiftwidth = 4
 vim.o.signcolumn = "number"
-vim.o.cursorlineopt = "both"
+vim.o.cursorlineopt = "number"
 vim.o.autoread = true
 vim.o.cursorline = true
 vim.o.autoindent = true
@@ -14,7 +11,6 @@ vim.o.clipboard = "unnamedplus"
 vim.o.swapfile = false
 vim.o.undodir = vim.fn.stdpath("data") .. "/undo"
 vim.o.undofile = true
-vim.o.guicursor = ""
 vim.o.title = true
 vim.g.netrw_banner = false
 vim.g.netrw_liststyle = 3
