@@ -1,28 +1,28 @@
-vim.o.number = true
-vim.o.relativenumber = true
-vim.o.smartcase = true
-vim.o.hlsearch = false
-vim.o.wrap = true
-vim.o.autoread = true
-vim.o.autoindent = true
-vim.o.breakindent = true
-vim.o.smartindent = true
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
-vim.o.expandtab = false
+vim.g.mapleader = " "
 
-vim.o.signcolumn = "number"
-vim.o.cursorline = true
-vim.o.cursorlineopt = "number"
+local set = vim.opt
+local setg = vim.g
 
-vim.o.background = "dark"
-vim.o.clipboard = "unnamedplus"
-vim.o.title = true
-vim.o.showmode = false
+set.mouse 				= "a"
+set.number  			= true
+set.relativenumber		= true
+set.signcolumn 			= "number"
+set.cursorline 			= true
+set.scrolloff 			= 5
+set.clipboard 			= "unnamedplus"
 
-vim.o.swapfile = false
-vim.o.undodir = vim.fn.stdpath("data") .. "/undo"
-vim.o.undofile = true
+set.showmode 			= false
+set.swapfile 			= false
+set.title 				= true
+set.undodir 			= vim.fn.stdpath("data") .. "/undo"
+set.undofile 			= true
 
-vim.g.netrw_banner = false
-vim.g.netrw_liststyle = 3
+set.tabstop 			= 4
+set.shiftwidth 			= 4
+set.autoindent			= true
+set.breakindent			= true
+set.smartindent			= true
+set.colorcolumn 		= "80"
+
+setg.netrw_banner 		= false
+setg.netrw_liststyle 	= 3
