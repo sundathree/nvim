@@ -9,6 +9,6 @@
 - **[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)**
 - **[nvim-autopairs](https://github.com/windwp/nvim-autopairs)**
 - **[bg.nvim](https://github.com/typicode/bg.nvim)**
-- **[gruvbox](https://github.com/morhetz/grvubox)**
+- **[gruvbox](https://github.com/morhetz/gruvbox)**
 - **[vim-buftabline](https://github.com/ap/vim-buftabline)**
 - **[lualine.nvim](https://github.com/nvim-lualine/lualine.lua)**
