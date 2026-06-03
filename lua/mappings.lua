@@ -8,6 +8,7 @@ map("n", "<leader>o", "<cmd>so<CR>")
 map({"n", "v"}, "x", '"_x')
 map("n", "<Tab>", "<cmd>bnext<CR>")
 map("n", "<S-Tab>", "<cmd>bprevious<CR>")
+
 map("n", ",,", function()
 	if vim.bo.filetype == "netrw" then
 		vim.cmd("bd")

@@ -11,3 +11,4 @@
 - **[bg.nvim](https://github.com/typicode/bg.nvim)**
 - **[vague.nvim](https://github.com/vague-theme/vague.nvim)**
 - **[vim-buftabline](https://github.com/ap/vim-buftabline)**
+- **[lualine.nvim](https://github.com/nvim-lualine/lualine.lua)**

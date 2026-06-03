@@ -11,9 +11,6 @@ return {
 		default = { "lsp", "path", "snippets", "buffer" },
 	},
 	completion = {
-		trigger = {
-			show_on_keyword = true,
-		},
 		documentation = {
 			auto_show = true,
 			auto_show_delay_ms = 500
@@ -22,10 +19,9 @@ return {
 			draw = {
 				columns = { { "label", "label_description", gap = 1 }, { "kind" } },
 				components = {
-					kind_icon = { text = function() return "" end },
-				},
-			},
-		},
-	},
-	appearance = { nerd_font_variant = "none" },
+					kind_icon = { text = function() return "" end }
+				}
+			}
+		}
+	}
 }

@@ -6,35 +6,16 @@ local servers = {
 	"yamlls",
 	"lua_ls",
 	"ts_ls",
-	"taplo",
+	"taplo"
 }
 
 require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = servers,
-	automatic_installation = true,
+	automatic_installation = true
 })
 
-local configs = {
-	jsonls = {
-		filetypes = { "json", "jsonc" },
-		settings = {
-			json = {
-				schemas = require("schemastore").json.schemas(),
-				validate = { enable = true },
-			},
-		},
-	},
-	lua_ls = {
-		settings = {
-			Lua = {
-				diagnostics = {
-					globals = { "vim" },
-				},
-			},
-		},
-	},
-}
+local configs = require("configs.lsp")
 
 for server, config in pairs(configs) do
 	vim.lsp.config(server, config)

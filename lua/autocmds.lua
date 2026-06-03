@@ -10,5 +10,10 @@ local function netrw_startup()
 	end, { buffer = true })
 end
 
-vim.api.nvim_create_autocmd("FileType", { pattern = "netrw", callback = netrw_keys })
-vim.api.nvim_create_autocmd("VimEnter", { callback = netrw_startup })
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "netrw", callback = netrw_keys
+})
+
+vim.api.nvim_create_autocmd("VimEnter", {
+    callback = netrw_startup
+})
