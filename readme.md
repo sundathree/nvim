@@ -12,3 +12,4 @@
 - **[gruvbox](https://github.com/morhetz/gruvbox)**
 - **[vim-buftabline](https://github.com/ap/vim-buftabline)**
 - **[lualine.nvim](https://github.com/nvim-lualine/lualine.lua)**
+- **[ts-autotag.nvim](https://github.com/tronikelis/ts-autotag.nvim)**

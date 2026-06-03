@@ -10,5 +10,6 @@
   "nvim-lspconfig": { "branch": "master", "commit": "07dff35e7c95288861200b788ef32d6103f107f0" },
   "nvim-treesitter": { "branch": "main", "commit": "4916d6592ede8c07973490d9322f187e07dfefac" },
   "schemastore.nvim": { "branch": "main", "commit": "19936230448bfb3dfd4314070e8bc499ceb55928" },
+  "ts-autotag.nvim": { "branch": "master", "commit": "07bcd146fa22558adf0d900e4a2601b6d142c805" },
   "vim-buftabline": { "branch": "master", "commit": "6cdb6ae69a0dbccbed5683adfe79be810df6d661" }
 }
