@@ -10,8 +10,10 @@ set.number  		= true
 set.relativenumber	= true
 set.signcolumn 		= "number"
 set.cursorline 		= true
+set.cursorlineopt	= "number"
 set.scrolloff 		= 5
 set.clipboard 		= "unnamedplus"
+set.fillchars       = {eob = " "}
 
 set.showmode 		= false
 set.swapfile 		= false

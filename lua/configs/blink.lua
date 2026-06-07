@@ -5,10 +5,17 @@ return {
 		["<C-b>"] = { "show", "show_documentation", "hide_documentation" },
 		["<C-j>"] = { "select_next", "fallback" },
 		["<C-k>"] = { "select_prev", "fallback" },
-		["<Esc>"] = { function(cmp) cmp.hide() end, "fallback" },
+		["<Esc>"] = { function(cmp) cmp.hide() end, "fallback" }
 	},
 	sources = {
 		default = { "lsp", "path", "snippets", "buffer" },
+        providers = {
+            snippets = {
+                opts = {
+                    friendly_snippets = true
+                }
+            }
+        }
 	},
 	completion = {
 		documentation = {

@@ -3,4 +3,4 @@ require("mappings")
 require("autocmds")
 require("configs.lazy")
 
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd("colorscheme off")

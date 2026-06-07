@@ -12,5 +12,6 @@ return {
 		version = "1.*",
 		opts = require("configs.blink")
 	},
+    { "rafamadriz/friendly-snippets" },
 	{ "b0o/schemastore.nvim" }
 }
