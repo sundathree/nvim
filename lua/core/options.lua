@@ -1,19 +1,13 @@
-vim.g.mapleader = " "
-
 local set = vim.opt
-local setg = vim.g
 
+set.termguicolors	= true
+set.mouse           = ""
 set.fileencoding	= "utf-8"
 set.autoread		= true
-set.mouse 			= "a"
-set.number  		= true
-set.relativenumber	= true
-set.signcolumn 		= "number"
-set.cursorline 		= true
-set.cursorlineopt	= "number"
-set.scrolloff 		= 5
+set.autowrite       = true
+set.autowriteall    = true
 set.clipboard 		= "unnamedplus"
-set.fillchars       = {eob = " "}
+set.fillchars       = { eob = " " }
 
 set.showmode 		= false
 set.swapfile 		= false
@@ -23,10 +17,11 @@ set.undofile 		= true
 
 set.tabstop 		= 4
 set.shiftwidth 		= 4
+set.shiftround      = true
 set.expandtab		= true
 set.autoindent		= true
 set.breakindent		= true
 set.smartindent		= true
-set.colorcolumn 	= "80"
 
-setg.netrw_banner 	= false
+set.linebreak       = true
+set.showbreak       = "~ "

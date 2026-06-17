@@ -9,13 +9,6 @@ return {
 	},
 	sources = {
 		default = { "lsp", "path", "snippets", "buffer" },
-        providers = {
-            snippets = {
-                opts = {
-                    friendly_snippets = true
-                }
-            }
-        }
 	},
 	completion = {
 		documentation = {

@@ -1,6 +1,9 @@
-require("options")
-require("mappings")
-require("autocmds")
-require("configs.lazy")
+vim.g.mapleader = " "
+vim.g.maplocalleader = ","
 
-vim.cmd("colorscheme off")
+for _, name in ipairs(vim.fn.readdir(vim.fn.stdpath("config") .. "/lua/core")) do
+    require("core." .. name:gsub("%.lua$", ""))
+end
+
+require("config.lazy")
+vim.cmd("colorscheme quiet")

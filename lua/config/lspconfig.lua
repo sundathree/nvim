@@ -15,7 +15,7 @@ require("mason-lspconfig").setup({
 	automatic_installation = true
 })
 
-local configs = require("configs.lsp")
+local configs = require("config.lsp")
 
 for server, config in pairs(configs) do
 	vim.lsp.config(server, config)

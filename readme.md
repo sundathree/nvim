@@ -9,6 +9,4 @@
 - **[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)**
 - **[nvim-autopairs](https://github.com/windwp/nvim-autopairs)**
 - **[bg.nvim](https://github.com/typicode/bg.nvim)**
-- **[lualine.nvim](https://github.com/nvim-lualine/lualine.lua)**
 - **[ts-autotag.nvim](https://github.com/tronikelis/ts-autotag.nvim)**
-- **[vim-colors-off](https://github.com/pbrisbin/vim-colors-off)**

@@ -4,14 +4,8 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			require("configs.lspconfig")
+			require("config.lspconfig")
 		end
 	},
-	{
-		"saghen/blink.cmp",
-		version = "1.*",
-		opts = require("configs.blink")
-	},
-    { "rafamadriz/friendly-snippets" },
 	{ "b0o/schemastore.nvim" }
 }
