@@ -1,45 +1,40 @@
-vim.opt.guicursor = ""
+vim.g.netrw_banner = 0
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
-
-vim.opt.signcolumn = "yes"
-
-vim.opt.fileencoding = "utf-8"
-
-vim.opt.autoread = true
-vim.opt.autowrite = true
-vim.opt.autowriteall = true
-
-vim.opt.clipboard = "unnamedplus"
-
-vim.opt.termguicolors = true
-vim.opt.fillchars = { eob = " " }
-vim.opt.showmode = false
-vim.opt.title = true
-
-vim.opt.undodir = vim.fn.stdpath("data") .. "/undo"
-vim.opt.undofile = true
-vim.opt.swapfile = false
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
-vim.opt.shiftround = true
 
-vim.opt.autoindent = true
-vim.opt.breakindent	= true
-vim.opt.smartindent	= true
+vim.opt.wrap = false
+vim.opt.smartindent = true
+vim.opt.inccommand = "split"
 
-vim.opt.linebreak = true
-vim.opt.colorcolumn = "80"
+vim.opt.splitbelow = true
+vim.opt.splitright = true
 
-vim.opt.incsearch = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.laststatus = 3
+
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = vim.fn.stdpath("data") .. "/undo"
+vim.opt.undofile = true
+
+vim.opt.clipboard:append("unnamedplus")
+vim.opt.isfname:append("@-@")
+vim.opt.guicursor = ""
 vim.opt.scrolloff = 8
 
-vim.opt.updatetime = 50
+vim.opt.signcolumn = "yes"
 
-vim.g.netrw_browse_split = 0
-vim.g.netrw_banner = false
-vim.g.netrw_winsize = 25
+vim.o.cmdheight = 0
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+    callback = function()
+        vim.hl.on_yank()
+    end,
+})
