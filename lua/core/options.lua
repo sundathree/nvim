@@ -1,4 +1,5 @@
 vim.g.netrw_banner = 0
+vim.g.have_nerd_font = 0
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
