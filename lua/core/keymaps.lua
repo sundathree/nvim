@@ -17,7 +17,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-vim.keymap.set("n", ",,", function()
+vim.keymap.set("n", "<leader>e", function()
 	if vim.bo.filetype == "netrw" then
 		vim.cmd("bd")
 	else
