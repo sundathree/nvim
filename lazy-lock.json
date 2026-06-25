@@ -1,4 +1,5 @@
 {
+  "atlas.vim": { "branch": "master", "commit": "f254465adbcae565d9cf8c987f5a797c1f9cf922" },
   "blink.cmp": { "branch": "main", "commit": "78336bc89ee5365633bcf754d93df01678b5c08f" },
   "lazy.nvim": { "branch": "main", "commit": "85c7ff3711b730b4030d03144f6db6375044ae82" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "0a695750d747db1e7e70bcf0267ef8951c95fc83" },
