@@ -2,6 +2,8 @@ vim.g.netrw_banner = 0
 vim.g.have_nerd_font = 0
 
 vim.opt.nu = true
+vim.opt.rnu = true
+vim.opt.showmode = false
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -27,7 +29,6 @@ vim.opt.undofile = true
 vim.opt.fillchars:append({ eob = " " })
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.isfname:append("@-@")
-vim.opt.guicursor = ""
 vim.opt.scrolloff = 8
 
 vim.api.nvim_create_autocmd("TextYankPost", {
