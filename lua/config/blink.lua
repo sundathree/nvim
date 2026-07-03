@@ -1,24 +1,21 @@
 return {
-	keymap = {
-		preset = "default",
-		["<CR>"] = { "accept", "fallback" },
-		["<C-b>"] = { "show", "show_documentation", "hide_documentation" },
-		["<C-j>"] = { "select_next", "fallback" },
-		["<C-k>"] = { "select_prev", "fallback" },
-		["<Esc>"] = { function(cmp) cmp.hide() end, "fallback" }
-	},
-	sources = {
-		default = { "lsp", "path", "snippets", "buffer" },
-	},
-	completion = {
-		documentation = {
-			auto_show = true,
-			auto_show_delay_ms = 500
-		},
-		menu = {
-			draw = {
-				columns = { { "label", "label_description", gap = 1 }, { "kind" } },
-			}
-		}
-	}
+    keymap = {
+        preset = "default",
+        ["<C-j>"] = { "select_next", "fallback" },
+        ["<C-k>"] = { "select_prev", "fallback" },
+        ['<C-space>'] = { function(cmp) cmp.show({ providers = { 'snippets' } }) end }
+    },
+    sources = {
+        default = { "lsp", "path", "snippets", "buffer" },
+    },
+    completion = {
+        documentation = {
+            auto_show = true,
+        },
+        menu = {
+            draw = {
+                columns = { { "label", "label_description", gap = 1 }, { "kind" } },
+            }
+        }
+    }
 }
