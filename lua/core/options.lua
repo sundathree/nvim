@@ -31,7 +31,8 @@ vim.opt.clipboard:append("unnamedplus")
 vim.opt.isfname:append("@-@")
 vim.opt.scrolloff = 8
 
-vim.opt.background = "light"
+vim.opt.background = "dark"
+vim.opt.cmdheight = 0
 
 vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function()
