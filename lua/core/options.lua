@@ -32,7 +32,8 @@ vim.opt.isfname:append("@-@")
 vim.opt.scrolloff = 8
 
 vim.opt.background = "dark"
-vim.opt.cmdheight = 0
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"
 
 vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function()
