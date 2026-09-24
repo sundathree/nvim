@@ -1,5 +1,4 @@
 return {
-    "https://github.com/Safaizal/bg.nvim",
-    branch = "fix/bg-nvim-error",
+    "https://github.com/pdicerbo/bg.nvim",
     lazy = false
 }
