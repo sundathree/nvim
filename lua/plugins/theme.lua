@@ -1,11 +1,12 @@
 return {
     {
-        "Mofiqul/adwaita.nvim",
+        "bluz71/vim-moonfly-colors",
+        name = "moonfly",
         priority = 1000,
         lazy = false,
         config = function()
-            vim.g.adwaita_transparent = true
-            vim.cmd.colorscheme("adwaita")
+            vim.g.moonflyTransparent = true
+            vim.cmd.colorscheme("moonfly")
         end,
     }
 }
