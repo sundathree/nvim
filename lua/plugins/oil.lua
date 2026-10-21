@@ -9,5 +9,14 @@ return {
                 show_hidden = true
             }
         }
+    },
+
+    {
+        "maelwalser/oil-bar.nvim",
+        dependencies = { "stevearc/oil.nvim" },
+        lazy = false,
+        opts = {
+            keymap = "<leader>e"
+        }
     }
 }
